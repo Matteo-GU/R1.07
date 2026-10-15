@@ -19,7 +19,6 @@ for i in range (hdebut+1,hfin+1):
         tarif2+=1
     else:
         tarif1+=1
-    print(i)
 print("Vous avez loué votre vélo pendant")
 if tarif1!=0: print(f"{tarif1} heure(s) au tarif horaire de 1.0 euros")
 if tarif2!=0: print(f"{tarif2} heure(s) au tarif horaire de 2.0 euros")
