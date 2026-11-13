@@ -10,13 +10,23 @@ for i in string :
         voyelle=voyelle+1
     if i=='w' and wagonrange==0:
         wagonrange=1
-    if i=='a' and wagonrange==1:
-        wagonrange=2
-    if i=='g' and wagonrange==2:
-        wagonrange=3
-    if i=='o' and wagonrange==3:
-        wagonrange=4
-    if i=='n' and wagonrange==4:
-        wagon+=1
+    wagonrange == 1:
+        if i=='a':
+            wagonrange=2
+        else:
+            wagonrange=0
+    if wagonrange==2:
+        if i=='g':
+            wagonrange=3
+        else:
+            wagonrange=0
+    if wagonrange==3:
+        if i=='o':
+            wagonrange=4
+        else:
+            wagonrange=0
+    if wagonrange==4:
+        if i=='n':
+            wagon+=1
         wagonrange=0
 print(f"Il y a {voyelle} voyelles et {wagon} wagons.")
